@@ -77,7 +77,7 @@ class NewCubit extends Cubit<AppState> {
   List<dynamic> search=[];
 
 
-  void changeTheme({bool darkTheme}) {
+  void changeTheme({bool? darkTheme}) {
     if(darkTheme!=null){
       isDark=darkTheme;
       emit(ChangeModeTheme());

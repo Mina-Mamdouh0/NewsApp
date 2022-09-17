@@ -75,9 +75,9 @@ Widget buildList(list){
 }
 
 Widget buildCardNews(context,{
-  @required String url,
-  @required String urlImage,
-  @required String name,
+  required String url,
+  required String urlImage,
+  required String name,
 }){
   return InkWell(
     onTap: (){

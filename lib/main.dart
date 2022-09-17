@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:newsapp/layout/newslayout.dart';
-import 'package:newsapp/screens/wouldnews/wouldnews.dart';
 import 'package:newsapp/shared/bloc/appstate.dart';
 import 'package:newsapp/shared/bloc/cubit.dart';
 import 'package:newsapp/shared/network/remotle/dio.dart';
@@ -19,7 +18,7 @@ void main()async {
 class MyApp extends StatelessWidget {
   final bool isDark;
 
-  const MyApp({Key key, this.isDark}) : super(key: key);
+  const MyApp({Key? key,required this.isDark}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

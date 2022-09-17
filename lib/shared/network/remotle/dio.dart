@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
 class DioHelper{
-  static Dio dio;
+  static Dio dio=Dio();
   static init(){
     dio=Dio(
       BaseOptions(
@@ -12,8 +12,8 @@ class DioHelper{
     );
   }
   static Future<Response> getDate({
- @required final String path,
-  @required Map<String, dynamic> query,
+ required final String path,
+  required Map<String, dynamic> query,
 })async{
     return await dio.get(path,queryParameters: query);
   }

@@ -5,7 +5,7 @@ class WebViewScreen extends StatelessWidget {
   final String url;
   final String name;
 
-  WebViewScreen({@required this.url, this.name = 'News App'});
+  WebViewScreen({required this.url, this.name = 'News App'});
 
   @override
   Widget build(BuildContext context) {

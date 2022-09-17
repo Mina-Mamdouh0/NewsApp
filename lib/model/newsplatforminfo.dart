@@ -1,11 +1,10 @@
-import 'package:flutter/material.dart';
 
 class NewsInfo {
   final String url;
   final String urlImage;
   final String name;
 
-  NewsInfo({@required this.url, @required this.urlImage, @required this.name});
+  NewsInfo({required this.url, required this.urlImage, required this.name});
 }
 List<NewsInfo> date=[
   NewsInfo(url: 'https://news.google.com/topstories?hl=ar&gl=EG&ceid=EG:ar',urlImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKLMuyrObRIU5ww5Q26OG2-KeXBTo1oemlCLxHPceW_kvrDsHzxfkmwTMmoMTbbRghKyI&usqp=CAU',name: 'Google News'),

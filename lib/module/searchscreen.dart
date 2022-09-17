@@ -7,7 +7,6 @@ import 'package:newsapp/shared/component/component.dart';
 class SearchScreen extends StatelessWidget {
   var textController = TextEditingController();
 
-
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
@@ -40,7 +39,7 @@ class SearchScreen extends StatelessWidget {
                         cubit.searchTheDate( value);
                       },
                       validator: (value) {
-                        if (value.isEmpty) {
+                        if (value!.isEmpty) {
                           return 'The Empty';
                         } else {
                           return null;

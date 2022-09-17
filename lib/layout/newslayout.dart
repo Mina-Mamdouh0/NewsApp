@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:newsapp/module/searchscreen.dart';
 import 'package:newsapp/shared/bloc/appstate.dart';
 import 'package:newsapp/shared/bloc/cubit.dart';
-import 'package:newsapp/shared/network/remotle/dio.dart';
 
 class HomeNews extends StatelessWidget {
   @override
